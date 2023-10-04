@@ -36,6 +36,7 @@
             this.minus_butt = new System.Windows.Forms.Button();
             this.mul_butt = new System.Windows.Forms.Button();
             this.div_butt = new System.Windows.Forms.Button();
+            this.cleat_butt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Title
@@ -81,7 +82,7 @@
             this.enter_butt.BackColor = System.Drawing.Color.DimGray;
             this.enter_butt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.enter_butt.ForeColor = System.Drawing.Color.White;
-            this.enter_butt.Location = new System.Drawing.Point(323, 427);
+            this.enter_butt.Location = new System.Drawing.Point(328, 365);
             this.enter_butt.Name = "enter_butt";
             this.enter_butt.Size = new System.Drawing.Size(100, 100);
             this.enter_butt.TabIndex = 3;
@@ -143,12 +144,26 @@
             this.div_butt.UseVisualStyleBackColor = false;
             this.div_butt.Click += new System.EventHandler(this.div_butt_Click);
             // 
+            // cleat_butt
+            // 
+            this.cleat_butt.BackColor = System.Drawing.Color.DimGray;
+            this.cleat_butt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.cleat_butt.ForeColor = System.Drawing.Color.White;
+            this.cleat_butt.Location = new System.Drawing.Point(328, 488);
+            this.cleat_butt.Name = "cleat_butt";
+            this.cleat_butt.Size = new System.Drawing.Size(100, 100);
+            this.cleat_butt.TabIndex = 11;
+            this.cleat_butt.Text = "Clear";
+            this.cleat_butt.UseVisualStyleBackColor = false;
+            this.cleat_butt.Click += new System.EventHandler(this.cleat_butt_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(484, 661);
+            this.Controls.Add(this.cleat_butt);
             this.Controls.Add(this.div_butt);
             this.Controls.Add(this.mul_butt);
             this.Controls.Add(this.minus_butt);
@@ -175,6 +190,7 @@
         private System.Windows.Forms.Button minus_butt;
         private System.Windows.Forms.Button mul_butt;
         private System.Windows.Forms.Button div_butt;
+        private System.Windows.Forms.Button cleat_butt;
     }
 }
 
