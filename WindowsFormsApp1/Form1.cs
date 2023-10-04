@@ -55,12 +55,22 @@ namespace WindowsFormsApp1
 
         private void minus_butt_Click_1(object sender, EventArgs e)
         {
-
+            set_cal(" -");
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void mul_butt_Click(object sender, EventArgs e)
+        {
+            set_cal(" x");
+        }
+
+        private void div_butt_Click(object sender, EventArgs e)
+        {
+            set_cal(" /");
         }
     }
 }

@@ -128,6 +128,7 @@
             this.mul_butt.TabIndex = 9;
             this.mul_butt.Text = "X";
             this.mul_butt.UseVisualStyleBackColor = false;
+            this.mul_butt.Click += new System.EventHandler(this.mul_butt_Click);
             // 
             // div_butt
             // 
@@ -140,6 +141,7 @@
             this.div_butt.TabIndex = 10;
             this.div_butt.Text = "/";
             this.div_butt.UseVisualStyleBackColor = false;
+            this.div_butt.Click += new System.EventHandler(this.div_butt_Click);
             // 
             // MainForm
             // 
