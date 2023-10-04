@@ -12,7 +12,8 @@ namespace WindowsFormsApp1
 {
     public partial class MainForm : Form
     {
-        String memo_1 = "";
+        Double memo_1;
+        String temp_hold;
 
         public MainForm()
         {
@@ -39,36 +40,25 @@ namespace WindowsFormsApp1
 
         }
 
-        void set_cal()
+        void set_cal(String type)
         {
-            String temp_hold;
-
-            temp_hold = textBox1.Text;
+            temp_hold = main_textbox.Text;
             memo_1 = Convert.ToDouble(temp_hold);
-            label1.Text = memo_1;
+            memo_label.Text = temp_hold + type;
+            main_textbox.Text = "";
         }
 
         private void plus_butt_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void minus_butt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mul_butt_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            set_cal(" +");
         }
 
         private void minus_butt_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
 
         }

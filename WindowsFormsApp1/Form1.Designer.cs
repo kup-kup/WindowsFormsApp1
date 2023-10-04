@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.Title = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.main_textbox = new System.Windows.Forms.TextBox();
+            this.memo_label = new System.Windows.Forms.Label();
             this.enter_butt = new System.Windows.Forms.Button();
             this.plus_butt = new System.Windows.Forms.Button();
             this.minus_butt = new System.Windows.Forms.Button();
@@ -51,30 +51,30 @@
             this.Title.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Title.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // main_textbox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(45, 250);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(400, 80);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.main_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.main_textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.main_textbox.ForeColor = System.Drawing.Color.White;
+            this.main_textbox.Location = new System.Drawing.Point(45, 250);
+            this.main_textbox.Name = "main_textbox";
+            this.main_textbox.Size = new System.Drawing.Size(400, 80);
+            this.main_textbox.TabIndex = 1;
+            this.main_textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.main_textbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // label1
+            // memo_label
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label1.Location = new System.Drawing.Point(45, 190);
-            this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(400, 48);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "starting";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            this.memo_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.memo_label.ForeColor = System.Drawing.Color.DarkGray;
+            this.memo_label.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.memo_label.Location = new System.Drawing.Point(45, 190);
+            this.memo_label.Name = "memo_label";
+            this.memo_label.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.memo_label.Size = new System.Drawing.Size(400, 48);
+            this.memo_label.TabIndex = 2;
+            this.memo_label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.memo_label.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // enter_butt
             // 
@@ -152,8 +152,8 @@
             this.Controls.Add(this.minus_butt);
             this.Controls.Add(this.plus_butt);
             this.Controls.Add(this.enter_butt);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.memo_label);
+            this.Controls.Add(this.main_textbox);
             this.Controls.Add(this.Title);
             this.Name = "MainForm";
             this.Text = "Main";
@@ -166,8 +166,8 @@
         #endregion
 
         private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox main_textbox;
+        private System.Windows.Forms.Label memo_label;
         private System.Windows.Forms.Button enter_butt;
         private System.Windows.Forms.Button plus_butt;
         private System.Windows.Forms.Button minus_butt;
